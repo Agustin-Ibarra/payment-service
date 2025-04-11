@@ -18,9 +18,9 @@ El microservicio fue desarrollado con la finalidad de procesar pagos de articulo
 ```plaintext
 backend/
 ├── source
-|   ├── auth/              # verifiacion de token de autenticacion
-|   ├── config/            # configuraciones de acceso a variables de entorno
-|   ├── controllers/       # Controladores de las rutas y logica de las respuestas
+|   ├── auth/              # Verifiacion de token de autenticacion
+|   ├── config/            # Configuracion de acceso a variables de entorno
+|   ├── controllers/       # Procesamiento de las peticiones
 |   ├── docs/              # Configuración de swagger y archivo con la documentacion de APIs
 |   ├── middlewares/       # Middlewares (procesamiento de los datos en las peticiones)
 |   ├── monitoring/        # Archivos de configuracion de winston y archivos logs
