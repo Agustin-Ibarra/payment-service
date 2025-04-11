@@ -4,7 +4,7 @@ El microservicio fue desarrollado con la finalidad de procesar pagos de articulo
 1. [Caracteristicas](#caracteristicas)
 2. [BackEnd](#backend)
 3. [Documentacion](#documentacion)
-4. [Pruebas Unitarias](#pruebas-unitarias-y-de-integracion)
+4. [Pruebas unitarias y de integracion](#pruebas-unitarias-y-de-integracion)
 5. [Monitoreo](#monitoreo)
 6. [Contenedores Docker](#contenedores-docker)
 ## Caracteristicas
@@ -36,7 +36,7 @@ backend/
 - APIs: la documentacion de las APIs fure generada con swagger open.io enlace a la documentacion [docs](http://localhost:3001/microservice/payments/docs)
 - ## Pruebas unitarias
 - Testing: las pruebas unitarias estan desrrolladas con la libreria Jest y Mock
-## Pruebas de integracion
+- ## Pruebas de integracion
 - Testing: las pruebas unitarias estan desrrolladas con la libreria Jest y Supertest
 - Iniciar Test: para iniciar los test se ejecuta el siguiente comando
 ``` bash
