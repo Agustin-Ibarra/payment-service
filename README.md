@@ -17,19 +17,19 @@ El microservicio fue desarrollado con la finalidad de procesar pagos de articulo
 - La estructura del backend está organizada de la siguiente manera:
 ```plaintext
 backend/
-  ├── source
-  |    ├── auth/              # verifiacion de token de autenticacion
-  |    ├── config/            # configuraciones de acceso a variables de entorno
-  |    ├── controllers/       # Controladores de las rutas y logica de las respuestas
-  |    ├── docs/              # Configuración de swagger y archivo con la documentacion de APIs
-  |    ├── middlewares/       # Middlewares (procesamiento de los datos en las peticiones)
-  |    ├── monitoring/        # Archivos de configuracion de winston y archivos logs
-  |    ├── routes/            # Definición de rutas
-  |    ├── services/          # Modulos de servicios y configuracion de stripe
-  |    └── index.ts           # Punto de entrada de la aplicación
-  ├── tests
-  |    ├── unit/              # test de integracion
-  |    └── integration/       # tes unitarios
+├── source
+|   ├── auth/              # verifiacion de token de autenticacion
+|   ├── config/            # configuraciones de acceso a variables de entorno
+|   ├── controllers/       # Controladores de las rutas y logica de las respuestas
+|   ├── docs/              # Configuración de swagger y archivo con la documentacion de APIs
+|   ├── middlewares/       # Middlewares (procesamiento de los datos en las peticiones)
+|   ├── monitoring/        # Archivos de configuracion de winston y archivos logs
+|   ├── routes/            # Definición de rutas
+|   ├── services/          # Modulos de servicios y configuracion de stripe
+|   └── index.ts           # Punto de entrada de la aplicación
+├── tests
+|   ├── unit/              # test de integracion
+|   └── integration/       # tes unitarios
 ```
 ## Documentacion
 - Codigo fuente: el codigo del servidor fue documentado con JSDocs
