@@ -34,10 +34,10 @@ backend/
 ## Documentacion
 - Codigo fuente: el codigo del servidor fue documentado con JSDocs
 - APIs: la documentacion de las APIs fure generada con swagger open.io enlace a la documentacion [docs](http://localhost:3001/microservice/payments/docs)
-- ## Pruebas unitarias
-- Testing: las pruebas unitarias estan desrrolladas con la libreria Jest y Mock
-- ## Pruebas de integracion
-- Testing: las pruebas unitarias estan desrrolladas con la libreria Jest y Supertest
+## Pruebas unitarias
+- Unit: las pruebas unitarias estan desrrolladas con la libreria Jest y Mock
+## Pruebas de integracion
+- Integration: las pruebas unitarias estan desrrolladas con la libreria Jest y Supertest
 - Iniciar Test: para iniciar los test se ejecuta el siguiente comando
 ``` bash
 npm run test
