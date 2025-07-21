@@ -28,8 +28,8 @@ backend/
 |   ├── services/          # Modulos de servicios y configuracion de stripe
 |   └── index.ts           # Punto de entrada de la aplicación
 ├── tests
-|   ├── unit/              # test de integracion
-|   └── integration/       # tes unitarios
+|   ├── unit/              # tests de integracion
+|   └── integration/       # tests unitarios
 ```
 ## Documentacion
 - Codigo fuente: el codigo del servidor fue documentado con JSDocs
@@ -39,7 +39,7 @@ backend/
 ## Pruebas de integracion
 - Integration: las pruebas unitarias estan desrrolladas con la libreria Jest y Supertest
 - Iniciar Test: para iniciar los test se ejecuta el siguiente comando
-``` bash
+```bash
 npm run test
 ```
 ## Monitoreo
@@ -47,10 +47,10 @@ npm run test
 ## Contenedores Docker
 - La aplicacion utiliza contendores para facilitar el despliegue y ejecutar la aplicacion en entornos aislados
 - Para crear un contendor basado en la imagen del proyecto, tiene que estar en la raiz del mismo y ejecutar el siguiente comando
-```
+```bash
 docker-compose up payments-service --build
 ```
 - Ejecutar contenedor: para ejecutar el contenedor se ejcuta el siguiente comando
-``` bash
+```bash
 docker start payments-service
 ```
