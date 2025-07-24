@@ -1,14 +1,31 @@
+import { config } from "../config/config.js";
 import { Request, Response } from "express";
-import { createSession } from "../services/service.js";
+import Stripe from "stripe";
 
-export const apiPayments = async function(req:Request,res:Response){
+const stripe = new Stripe(config.STRIPE);
+
+export const apiPayments = async function (req: Request, res: Response) {
   type requestData = {
-    item:string,
-    itemDescription:string,
-    amount:number,
-    total:number
+    idPrice: string
   }
-  const {item,amount,total,itemDescription}:requestData = req.body;
-  const url = await createSession(item,itemDescription,amount,total);
-  res.status(201).json({paymentUrl:url});
+
+  const { idPrice }: requestData = req.body;
+  try {
+    const session = await stripe.checkout.sessions.create({
+      mode: "subscription",
+      payment_method_types: ["card"],
+      line_items: [
+        {
+          price: idPrice,
+          quantity: 1
+        }
+      ],
+      success_url: config.SUCCES_URL,
+      cancel_url: config.CANCEL_URL
+    });
+    res.json({ url: session.url });
+  } 
+  catch (error) {
+   res.status(400).json({errorMessage:"Error when processing payment, the field idprice may be incorrect"});
+  }
 }

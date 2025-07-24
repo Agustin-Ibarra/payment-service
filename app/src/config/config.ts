@@ -12,5 +12,4 @@ export const config = envalid.cleanEnv(process.env,{
   SECRET:envalid.str(),
   DELIVERY:envalid.email(),
   RECEIVER:envalid.email(),
-  TOKEN_TEST:envalid.str()
 });
