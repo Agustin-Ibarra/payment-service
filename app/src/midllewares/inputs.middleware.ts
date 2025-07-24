@@ -2,9 +2,9 @@ import { NextFunction, Request, Response } from 'express';
 import { body, ValidationChain, validationResult } from 'express-validator';
 
 export const idPriceRule:ValidationChain[] = [
-  body("idPrice").notEmpty().withMessage('the item is required!'),
-  body("idPrice").isString().withMessage('the item must be a string!'),
-  body("idPrice").matches(/^[a-zA-Z0-9_\s]+$/).withMessage('item must only contain letters and blank spaces!'),
+  body("idPrice").notEmpty().withMessage('the idPrice is required!'),
+  body("idPrice").isString().withMessage('the idPrice must be a string!'),
+  body("idPrice").matches(/^[a-zA-Z0-9_\s]+$/).withMessage('idPrice must only contain letters, numbers and underscore!'),
   body("idPrice").escape()
 ]
 
